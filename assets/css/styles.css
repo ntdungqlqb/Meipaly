@@ -17,3 +17,151 @@ html,
 body {
     scroll-behavior: smooth;
 }
+/* ============================== Common ==============================*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1270px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.sub-title {
+    font-size: 2.5rem;
+}
+
+.btn {
+    --height: 51px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--height);
+    line-height: var(--height);
+    width: 150px;
+    border: 1px solid #e62b4a;
+    background-color: #e62b4a;
+    color: white;
+    font-size: 1.6rem;
+    transition: background-color 0.3s;
+}
+
+/* ============================== Header ==============================*/
+.header {
+    width: 100%;
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+}
+
+.header-inner {
+    width: 1330px;
+    max-width: calc(100% - 48px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 131.25%;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navbar-item {
+    font-size: 1.7rem;
+    padding: 10px 25px;
+    transition: all 0.25s;
+}
+
+.navbar-item:hover,
+.navbar-item--active {
+    color: #e62b4a;
+}
+
+/* ============================== Hero ==============================*/
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url("../img/home_slider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-title-hero {
+    font-size: 2.5rem;
+    color: black;
+    padding: 10px 0;
+}
+
+.title-hero {
+    font-size: 7.5rem;
+    max-width: 490px;
+    line-height: 120%;
+    padding: 10px 0;
+    font-weight: 700;
+    color: black;
+}
+
+.hero-btn {
+    margin-top: 20px;
+}
+
+.hero-btn:hover {
+    background-color: #af2239;
+}
+
+.hero-scroll {
+    width: 40px;
+    height: 40px;
+    margin-top: 60px;
+}
+
+.hero-scroll-icon {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(123deg) brightness(110%) contrast(101%);
+    animation: arrowDown 1s linear infinite;
+}
+
+@keyframes arrowDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
