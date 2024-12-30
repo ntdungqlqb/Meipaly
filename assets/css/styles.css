@@ -193,7 +193,7 @@ a {
     padding: 90px;
 }
 
-.service-inner {
+.service-top {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -207,28 +207,16 @@ a {
     max-width: 640px;
 }
 
-.service-slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.service-list {
-    display: flex;
-    overflow: hidden;
-}
-
 .service-item {
     position: relative;
     margin: 15px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
-    width: calc(20% - 30px);
+    width: calc(100% - 20px) !important;
     height: 230px;
-    flex-shrink: 0;
 }
 
 .service-item::after {
@@ -259,26 +247,14 @@ a {
     font-weight: 400;
 }
 
-.service-dots {
-    display: flex;
-    column-gap: 16px;
+/* Slick */
+.service-list .slick-dots li button:before {
+    color: #ffffff;
+    font-size: 1.4rem;
 }
 
-.service-dot {
-    width: 12px;
-    height: 12px;
-    background-color: #494949;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.service-dot:hover {
-    background-color: white;
-}
-
-.service-dot--active {
-    background-color: #b21e38;
+.service-list .slick-dots li.slick-active button:before {
+    color: #e62b4a;
 }
 
 /* ============================== Blog ==============================*/
