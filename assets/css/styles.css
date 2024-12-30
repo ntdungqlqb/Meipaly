@@ -281,7 +281,6 @@ a {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 75%;
     gap: 30px;
 }
 
@@ -386,7 +385,7 @@ a {
     padding: 25px 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 95px;
+    column-gap: 150px;
     border-top: 1px solid #afafaf;
     border-bottom: 1px solid #afafaf;
 }
@@ -422,7 +421,6 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 80%;
 }
 
 .experience-heading {
@@ -470,7 +468,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 90%;
     column-gap: 30px;
 }
 
