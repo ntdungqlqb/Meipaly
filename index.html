@@ -47,7 +47,8 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
-        <header class="header">
+        <!-- Header -->
+        <header class="header" id="header">
             <div class="header-inner">
                 <a href="./">
                     <div class="logo">
@@ -67,6 +68,8 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Main -->
         <main>
             <!-- Hero -->
             <section class="hero">
@@ -479,6 +482,12 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Back to top -->
+        <a href="#!" class="backToTop cd-top text-replace js-cd-top">
+            <img src="./assets/icons/chevron-down-solid.svg" alt="Back to top" class="backToTop-icon" />
+        </a>
+
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -503,6 +512,8 @@
             referrerpolicy="no-referrer"
         ></script>
         <script src="./assets/js/jquery.countup.js"></script>
+        <script src="./assets/js/util.js"></script>
+        <script src="./assets/js/backtotop.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
